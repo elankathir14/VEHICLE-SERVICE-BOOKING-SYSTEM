@@ -1,153 +1,99 @@
-🚗 Vehicle Service Booking System
+Vehicle Service Booking System
 
-«A simple, efficient, and user-friendly web application for booking and managing vehicle service appointments.»
+# Problem Statement
 
-"Python" (https://img.shields.io/badge/Python-3.x-blue)
-"Flask" (https://img.shields.io/badge/Flask-Web%20Framework-black)
-"SQLite" (https://img.shields.io/badge/Database-SQLite-green)
-"License" (https://img.shields.io/badge/License-Academic-orange)
+Many vehicle service centers still manage customer bookings manually using registers or phone calls. This can result in booking errors, scheduling conflicts, delayed services, and poor customer experience. A Vehicle Service Booking System helps automate service appointments, manage vehicle records, and improve service center efficiency.
 
----
+# Project Objectives
 
-📖 Overview
+- Allow customers to book vehicle service appointments online.
+- Manage vehicle service schedules efficiently.
+- Track service status in real time.
+- Maintain customer and vehicle records.
+- Reduce manual booking errors.
+- Improve service center productivity and customer satisfaction.
 
-The Vehicle Service Booking System is a web-based application developed using Python and Flask. It simplifies the vehicle service booking process by allowing customers to schedule service appointments online while enabling administrators to efficiently manage bookings.
+# Technologies Used
 
-This project was developed as a college mini project to demonstrate the implementation of a real-world service management system using Python, Flask, HTML, CSS, Bootstrap, and SQLite.
+## Front End
 
----
+- HTML
+- CSS
+- JavaScript
 
-✨ Features
+## Back End
 
-👤 Customer Module
+- Python (Flask/Django)
 
-- User Registration
-- Secure Login
-- Book Vehicle Service
-- View Booking Details
-- Track Booking Status
-- Update Profile
+## Database
 
-🔧 Admin Module
+- MySQL
 
-- Secure Admin Login
-- View All Bookings
-- Manage Customers
-- Update Service Status
-- Dashboard Overview
+# Modules
 
----
+- User Management
+- Customer Management
+- Vehicle Management
+- Service Booking Management
+- Service Status Tracking
+- Payment Management
+- Notification Management
+- Report Generation
 
-🛠️ Tech Stack
+# Database Tables
 
-Technology| Purpose
-Python| Backend Programming
-Flask| Web Framework
-HTML5| Frontend Structure
-CSS3| Styling
-Bootstrap| Responsive UI
-SQLite| Database
-Jinja2| Template Engine
-Git & GitHub| Version Control
+## User
 
----
+| Field Name | Data Type |
+|------------|-----------|
+| user_id | INT |
+| username | VARCHAR |
+| password | VARCHAR |
+| role | VARCHAR |
 
-📂 Project Structure
+## Customer
 
-VEHICLE-SERVICE-BOOKING-SYSTEM/
-│
-├── app.py
-├── requirements.txt
-├── database.db
-├── templates/
-├── static/
-├── models/
-├── routes/
-├── README.md
-└── ...
+| Field Name | Data Type |
+|------------|-----------|
+| customer_id | INT |
+| customer_name | VARCHAR |
+| contact_number | VARCHAR |
+| address | VARCHAR |
 
----
+## Vehicle
 
-🚀 Installation
+| Field Name | Data Type |
+|------------|-----------|
+| vehicle_id | INT |
+| customer_id | INT |
+| vehicle_number | VARCHAR |
+| vehicle_model | VARCHAR |
+| vehicle_type | VARCHAR |
 
-Clone the repository
+## Service Booking
 
-git clone https://github.com/elankathir14/VEHICLE-SERVICE-BOOKING-SYSTEM.git
+| Field Name | Data Type |
+|------------|-----------|
+| booking_id | INT |
+| customer_id | INT |
+| vehicle_id | INT |
+| service_type | VARCHAR |
+| booking_date | DATE |
+| status | VARCHAR |
 
-Move into the project directory
+## Payment
 
-cd VEHICLE-SERVICE-BOOKING-SYSTEM
+| Field Name | Data Type |
+|------------|-----------|
+| payment_id | INT |
+| booking_id | INT |
+| amount | DECIMAL |
+| payment_date | DATE |
 
-Install dependencies
+# Expected Outcome
 
-pip install -r requirements.txt
+The system will provide an efficient platform for customers to schedule vehicle services, track service progress, manage vehicle records, and improve overall service center operations.
 
-Run the application
+# Conclusion
 
-python app.py
-
-Open your browser and visit:
-
-http://127.0.0.1:5000
-
----
-
-🎯 Objectives
-
-- Reduce manual vehicle service booking.
-- Provide an easy-to-use booking platform.
-- Improve service management efficiency.
-- Store customer and booking records securely.
-- Demonstrate CRUD operations using Flask and SQLite.
-
----
-
-📸 Screenshots
-
-«Add screenshots of:»
-
-- Home Page
-- Login Page
-- Registration Page
-- Customer Dashboard
-- Service Booking Form
-- Admin Dashboard
-- Booking Management
-
----
-
-🔮 Future Enhancements
-
-- Online Payment Integration
-- Email Notifications
-- SMS Alerts
-- Service History
-- Multiple Service Centers
-- Mobile Application
-- PDF Invoice Generation
-
----
-
-🤝 Contributing
-
-Contributions, suggestions, and improvements are always welcome. Feel free to fork the repository and submit a pull request.
-
----
-
-👨‍💻 Developer
-
-Kathir
-
-GitHub: https://github.com/elankathir14
-
----
-
-⭐ Support
-
-If you found this project helpful, don't forget to ⭐ Star this repository.
-
----
-
-📄 License
-
-This project is intended for educational and academic purposes only.
+The Vehicle Service Booking System enhances service booking accuracy, reduces manual work, improves customer satisfaction, and provides an effective solution for managing vehicle service operations.
